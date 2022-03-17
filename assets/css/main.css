@@ -125,7 +125,9 @@ section {
   justify-content: flex-start;
 }
 
-#hero article button {
+#hero article a {
+  display: block;
+  background-color: #F6F5EF;
   text-transform: uppercase;
   padding: 1rem 30px 0.8rem;
   border-radius: 10px;
