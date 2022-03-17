@@ -11,17 +11,41 @@
   <div id="apply">
     <h1>Inscrivez vous!</h1>
     <form id="contactForm">
-      <label for="name">First name:</label><br>
+      <label for="name">Votre nom:</label><br>
       <input type="text" id="name" name="name" ><br>
+      <label for="age">Age: <span id="ageslider"></span></label><br>
+      <input type="range" name="age" id="slider" class="slider" min="18" max="108" step="1" value=""><br>
+      <label for="lieu">Ville: </label><br>
+      <input type="text" id="lieu" name="lieu"><br>
       <label for="email">Email:</label><br>
       <input type="email" id="email" name="email" ><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea>
-      <br><br>
+      <div id="platpref">
+        <label for="platpréféré">Plat préféré:</label><br>
+        <select name="plats" id="plats">
+        <option value="">--Please choose an option--</option>
+        <option value="pizza">Pizza</option>
+        <option value="tacos">Tacos</option>
+        <option value="pringles">Pringles</option>
+        <option value="tartiflette">Tartiflette</option>
+        <option value="milkshake">Milkshake à la crevette</option>
+        <option value="pain">Du pain</option>
+        </select>
+      </div><br>
+      <label for="why">Pourquoi souhaitez-vous participer?</label><br>
+     <input type="checkbox" id="reason1" name="reason1" value="soucis">
+      <label for="reason1"> On m'a dit que je n'aurais plus jamais de soucis,</label><br>
+      <input type="checkbox" id="reason2" name="reason2" value="smartbox">
+      <label for="reason2"> On m'a offert la Smartbox® Special N.A.R.I.F,</label><br>
+      <input type="checkbox" id="reason3" name="reason3" value="johnny">
+      <label for="reason3"> Je veux gagner le poster de Johnny @Bercy 2003,</label><br>
+      <input type="checkbox" id="reason4" name="reason4" value="pokemon">
+      <label for="reason4"> On m'a dit que Pokémon était un rêve, je veux me réveiller!</label><br>
+      <input type="checkbox" id="reason5" name="reason5" value="con">
+      <label for="reason5"> "'On' est un con."</label><br>
       <input type="submit" value="Submit">
     </form>
   </div>
-  <div id="contact">
+  <!-- <div id="contact">
     <h1></h1>
     <form id="contactForm">
       <label for="name">First name:</label><br>
@@ -32,7 +56,8 @@
       <textarea id="message" name="message"></textarea>
       <br><br>
       <input type="submit" value="Submit">
-    </form>
-  </div>  
+    </form> -->
+  </div>
+  <script src="assets/js/contact.js"></script  
 </body>
 </html>
