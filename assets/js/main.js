@@ -1,11 +1,12 @@
-let startDay = new Date("01/01/2022");
+let startDay = new Date("03/01/2022");
+const daysBetweenSession = 28;
 
-const getCounter = () => {
+const getCounter = (startDay, daysBetweenSession) => {
 
   let toDay = new Date();
 
   //Get the number of days to the next session
-  const daysToNextSession = Math.floor(startDay.getTime() / (24 * 60 * 60 * 1000)) % 28;
+  const daysToNextSession = Math.floor(startDay.getTime() / (24 * 60 * 60 * 1000)) % daysBetweenSession;
 
   //Get the date of the next session
   const nextSessionDate = new Date(new Date().setDate(toDay.getDate() + daysToNextSession));
@@ -20,10 +21,10 @@ const getCounter = () => {
   counter.innerHTML = `${daysToNextSession.toString().padStart(2, "0")}:${newHour.toString().padStart(2, "0")}:${newMinute.toString().padStart(2, "0")}:${newSecond.toString().padStart(2, "0")}`;
 }
 
-document.querySelector(".setDate").addEventListener("change", (ev) => {
-  const date = ev.currentTarget.value.split("-");
-  console.log(`${date[1]}/${date[2]}/${date[0]}`);
-  startDay = new Date(`${date[1]}/${date[2]}/${date[0]}`);
-})
+setInterval(getCounter, 1000, startDay, daysBetweenSession)
 
-setInterval(getCounter, 1000)
+
+const getNextDates = (startDate, interval, nbOfDates) => {
+  const dates = [].fill(nbOfDates, 0)
+}
+console.log(getNextDates(startDate, daysBetweenSessions, 3));
