@@ -3,24 +3,24 @@
   src: url("../fonts/vanilla\ whale.otf") format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap");
 
 :root {
-  --color-primary: #BD2A21;
+  --color-primary: #bd2a21;
   --color-secondary: #333333;
-  --color-tiercary: #F6F5EF;
+  --color-tiercary: #f6f5ef;
 }
 
 /* RESET SETTINGS */
-html, body {
+html,
+body {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 * {
   box-sizing: border-box;
 }
 /* END RESET SETTINGS */
-
 
 body {
   display: flex;
@@ -29,7 +29,7 @@ body {
   height: 100vh;
   color: var(--color-tiercary);
   background-color: var(--color-secondary);
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 a {
@@ -80,7 +80,12 @@ header .menu {
 }
 
 #hero {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/hero.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
