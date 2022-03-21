@@ -3,8 +3,11 @@
     src: url("../fonts/vanilla\ whale.otf") format("opentype");
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap');
-  
+@font-face {
+  font-family: Spartan;
+  src: url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap');
+
+}  
   :root {
     --color-primary: #BD2A21;
     --color-secondary: #333333;
@@ -26,7 +29,7 @@
     background-image: url(/assets/img/bgBase.png);
     display: flex;
     flex-direction: column;
-    justify-content: space-a;
+    /* justify-content: space-a; */
     height: 100vh;
     color: var(--color-tiercary);
     background-color: var(--color-secondary);
@@ -36,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 26rem;
+    margin: 2rem 25%;
     padding: 1rem;
     background-color: #f0e9e5a3 ;
     background-image: url(/assets/img/LogoW.png);
@@ -54,13 +57,13 @@
     justify-content: center; 
 }*/
 form{
+  
     display:flex;
     flex-direction: column;
     /* align-items: center; */
     height: 50rem;
     margin-bottom: 5em;
-
-    /* border: #BD2A21 solid 2px; */
+       /* border: #BD2A21 solid 2px; */
   
 }
 form h2{
@@ -169,6 +172,23 @@ justify-content: flex-end; */
   background-position: center;
   height: 4rem;
   background-repeat:no-repeat;
+  
+}
+
+@media screen and (max-width: 400px){
+  #apply{
+    /* width: fit-content; */
+    margin: 2rem;
+  }
+  #contactform{
+    display: none;
+    flex-direction: row; 
+    /* justify-content: center; */
+    margin: 2em;
+ }
+ #who{
+   border: #BD2A21 solid 2px;
+ }
   
 }
 /* #who{

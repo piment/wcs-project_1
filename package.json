@@ -1,0 +1,23 @@
+{
+  "name": "wcs-project_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piment/wcs-project_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piment/wcs-project_1/issues"
+  },
+  "homepage": "https://github.com/piment/wcs-project_1#readme",
+  "dependencies": {
+    "w3c-html-validator": "^1.0.3"
+  }
+}
