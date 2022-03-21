@@ -12,6 +12,12 @@
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "printWidth": 150
+        }
+    ]
   }
 }
