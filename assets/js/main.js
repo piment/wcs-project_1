@@ -13,7 +13,8 @@ const getCounter = (startDay, sessionInterval) => {
   document.querySelector('.nextSessionDate').textContent = `(${nextSessionDate.toLocaleDateString()})`;
 
   // Get the number of hour, minutes and seconds (minus the number of days) to the next session
-  const newHour = 24 - (toDay.getHours() === 0 ? 24 : toDay.getHours()) - 1;
+  let newHour = 24 - (toDay.getHours() === 0 ? 24 : toDay.getHours()) - 1;
+  newHour = newHour === -1 ? 23 : newHour;
   const newMinute = 60 - (toDay.getMinutes() === 0 ? 60 : toDay.getMinutes()) - 1;
   const newSecond = 60 - (toDay.getSeconds() === 0 ? 60 : toDay.getSeconds());
 
