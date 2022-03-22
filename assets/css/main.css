@@ -102,6 +102,9 @@ footer {
   justify-content: space-evenly;
 }
 
+.hidden {
+  display: none;
+}
 /* END BASE TEMPLATE FOR ALL PAGES */
 
 .base-section {
@@ -121,25 +124,24 @@ footer {
 #logo {
   width: 100vw;
 }
-#hero article {
+#hero .bloc {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: calc((100vh - 2rem) / 3);
-  /* border: 1px dashed yellowgreen; */
 }
 
-#hero article:last-of-type {
+#hero .bloc:last-of-type {
   justify-content: center;
 }
 
-#hero article:last-of-type a {
+#hero .bloc:last-of-type a {
   background-image: url(/assets/img/BrushStroke.png);
 }
 
-#hero article a {
+#hero .bloc a {
   display: block;
   background-color: #F6F5EF;
   text-transform: uppercase;
@@ -186,15 +188,6 @@ footer {
   font-family: "spartan-medium";
 }
 /* COUNTER END */
-
-#menu {
-  min-height: 100vh;
-  background-image: url("../img/bgBase.png");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
-
 
 
 .moveDown {
