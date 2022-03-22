@@ -1,0 +1,83 @@
+body
+{
+    background-image: url(assets/img/bgBase.png);
+    background-attachment: fixed;
+
+}
+
+#cardMenu
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.historyAndRules
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 12rem; 
+
+}
+
+
+.article
+{
+    background-color: #333333;
+    padding : 0.5rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+    background-image: url(assets/img/featherRed.png);
+    background-position: right center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+.article > h1
+{
+padding-bottom: 2rem;
+padding-top: 1rem;
+}
+
+
+.hallOfFame
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    flex-wrap: wrap;
+    height: 12rem; 
+
+}
+.contact
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    flex-wrap: wrap;
+    height: 12rem; 
+    margin-bottom: 10rem;
+}
+
+.logoTiles
+{ 
+
+display: flex;   
+align-items: center;
+justify-content: center;
+background-color: red;
+border-radius: 0.8rem 0 0 0.8rem;
+}

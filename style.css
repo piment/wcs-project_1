@@ -1,0 +1,31 @@
+#cardMenu{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 3rem 10rem
+}
+
+.historyAndRules{
+    border: solid;
+    margin: 3rem 0rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.hallOfFame{
+    border: solid;
+    margin: 3rem 0rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.contact{
+    border: solid;
+    margin: 3rem 0rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.titleOfTile{
+    border: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    margin: 0rem;
+}
