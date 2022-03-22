@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/css/main.css" rel="stylesheet">
   <link href="/assets/css/contact.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f9cb11a26f.js" crossorigin="anonymous"></script>
   <title>Native-American Roulette - IFNAR</title>
 </head>
 <body>
@@ -27,15 +29,23 @@
     <h1>Inscrivez vous!</h1>
     <form id="contactForm">
       <div id="who">
-        <label for="name">Votre nom:</label><br>
-        <input type="text" id="name" name="name" ><br>
-        <label for="age">Age : <span id="ageslider"></span></label><br>
-        <input type="range" name="age" id="slider" class="slider" min="18" max="108" step="1" value=0><br>
-        <label for="lieu">Ville: </label><br>
-        <input type="text" id="lieu" name="lieu"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" ><br>
-        <div id="platpref">
+        <div class="form-input">
+          <label for="name">Votre nom:</label>
+          <input type="text" id="name" name="name" >
+        </div>
+        <div class="form-input">
+          <label for="age">Age : <span id="ageslider"></span></label>
+          <input type="range" name="age" id="slider" class="slider" min="18" max="108" step="1" value=0>
+        </div>
+        <div class="form-input">
+          <label for="lieu">Ville: </label>
+          <input type="text" id="lieu" name="lieu">
+        </div>   
+        <div class="form-input">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" >
+        </div>
+        <div id="platpref" class="form-input">
           <label for="platpréféré">Plat préféré:</label>
           <select name="plats" id="plats" >
           <option value="" id="platselect">------------------------------</option>
