@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,31 +61,132 @@
       </div>
       <div id="why">
         <h2>Pourquoi souhaitez-vous participer?</h2>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/assets/css/contact.css" rel="stylesheet" />
+    <title>Native-American Roulette - IFNAR</title>
+  </head>
+  <body>
+    <header>
+      <i class="fas fa-bars"></i>
+      <h1>
+        <img src="./assets/img/NARIFW.png" alt="Logo NARIF" />
+      </h1>
+>>>>>>> a5773041a840147d2713e05b31174b6a47d14760
 
-        <ul>
-          <li>
-            <input type="checkbox" class="reason" name="reason1" value="soucis">
-            <label id="reason" for="reason1"> On m'a dit que je n'aurais plus jamais de soucis,</label><br>
-                </li>
-                <li>
-            <input type="checkbox" class="reason" name="reason2" value="smartbox">
-            <label id="reason" for="reason2"> On m'a offert la Smartbox® Special N.A.R.I.F,</label><br>
-                </li>
-                <li><input type="checkbox" class="reason" name="reason3" value="johnny">
-          <label id="reason" for="reason3"> Je veux gagner le poster de Johnny @Bercy 2003,</label><br>
-                </li>
-                <li><input type="checkbox" class="reason" name="reason4" value="pokemon">
-          <label id="reason" for="reason4"> On m'a dit que Pokémon était un rêve, je veux me réveiller!</label><br>
-                </li>
-                <li><input type="checkbox" class="reason" name="reason5" value="con">
-          <label id="reason" for="reason5"> "'On' est un con."</label><br>
-                </li>
+      <nav>
+        <ul class="menu">
+          <li>Accueil</li>
+          <li>Histoire / Règles</li>
+          <li>Hall of Fame</li>
+          <li>Contact & Inscription</li>
         </ul>
-      <input type="submit" id="submit" value="Submit">
-      </div>
-    </form>
-  </div>
-  <!-- <div id="contact">
+      </nav>
+    </header>
+    <div id="apply">
+      <h1>Inscrivez vous!</h1>
+      <form id="contactForm">
+        <div id="who">
+          <label for="name">Votre nom:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="age">Age : <span id="ageslider"></span></label><br />
+          <input
+            type="range"
+            name="age"
+            id="slider"
+            class="slider"
+            min="18"
+            max="108"
+            step="1"
+            value="0"
+          /><br />
+          <label for="lieu">Ville: </label><br />
+          <input type="text" id="lieu" name="lieu" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <div id="platpref">
+            <label for="platpréféré">Plat préféré:</label>
+            <select name="plats" id="plats">
+              <option value="" id="platselect">
+                ------------------------------
+              </option>
+              <option value="pizza">Pizza</option>
+              <option value="tacos">Tacos</option>
+              <option value="pringles">Pringles</option>
+              <option value="tartiflette">Tartiflette</option>
+              <option value="milkshake">Milkshake à la crevette</option>
+              <option value="pain">Du pain</option>
+            </select>
+          </div>
+          <br />
+        </div>
+        <div id="why">
+          <h2>Pourquoi souhaitez-vous participer?</h2>
+
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                class="reason"
+                name="reason1"
+                value="soucis"
+              />
+              <label id="reason" for="reason1">
+                On m'a dit que je n'aurais plus jamais de soucis,</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="reason"
+                name="reason2"
+                value="smartbox"
+              />
+              <label id="reason" for="reason2">
+                On m'a offert la Smartbox® Special N.A.R.I.F,</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="reason"
+                name="reason3"
+                value="johnny"
+              />
+              <label id="reason" for="reason3">
+                Je veux gagner le poster de Johnny @Bercy 2003,</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="reason"
+                name="reason4"
+                value="pokemon"
+              />
+              <label id="reason" for="reason4">
+                On m'a dit que Pokémon était un rêve, je veux me
+                réveiller!</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="reason"
+                name="reason5"
+                value="con"
+              />
+              <label id="reason" for="reason5"> "'On' est un con."</label><br />
+            </li>
+          </ul>
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <!-- <div id="contact">
     <h1></h1>
     <form id="contactForm">
       <label for="name">First name:</label><br>
@@ -95,16 +197,16 @@
       <textarea id="message" name="message"></textarea>
       <br><br>
       <input type="submit" value="Submit">
-    </form> -->
-  </div>
-  <footer>
-    <a href="#">Lien 1</a>
-    <a href="#">Lien 2</a>
-    <a href="#">Lien 3</a>
-    <div id="credits">
-      <p>Photo de Dziana Hasanbekava provenant de Pexels</p>
-    </div>
-  </footer>
-  <script src="assets/js/contact.js"></script>  
-</body>
+    </form> 
+  </div>-->
+    <footer>
+      <a href="#">Lien 1</a>
+      <a href="#">Lien 2</a>
+      <a href="#">Lien 3</a>
+      <div id="credits">
+        <p>Photo de Dziana Hasanbekava provenant de Pexels</p>
+      </div>
+    </footer>
+    <script src="assets/js/contact.js"></script>
+  </body>
 </html>
