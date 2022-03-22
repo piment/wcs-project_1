@@ -207,7 +207,7 @@ justify-content: flex-end; */
 } */ 
 
   
-  a {
+  /* a {
     text-decoration: none;
     color: var(--color-tiercary);
   }
@@ -255,7 +255,7 @@ justify-content: flex-end; */
     background-color: var(--color-primary);
     display: flex;
     justify-content: space-evenly;
-  }
+  } */
 
 /* body{
     background-image: url(/assets/img/bgBase.png);
