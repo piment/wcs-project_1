@@ -1,3 +1,4 @@
+/* RESET & SETTINGS */
 @font-face {
   font-family: vanilla;
   src: url("../fonts/vanilla\ whale.otf") format("opentype");
@@ -27,15 +28,16 @@
   scroll-behavior: smooth;
 }
 
-/* RESET SETTINGS */
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* END RESET SETTINGS */
+/* END RESET & SETTINGS */
 
+/* BASE TEMPLATE FOR ALL PAGES */
 body {
   display: flex;
   flex-direction: column;
@@ -93,7 +95,19 @@ header nav {
 header .menu {
   display: none;
 }
-section {
+
+footer {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}
+/* END BASE TEMPLATE FOR ALL PAGES */
+
+.base-section {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -110,25 +124,24 @@ section {
 #logo {
   width: 100vw;
 }
-#hero article {
+#hero .bloc {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: calc((100vh - 2rem) / 3);
-  /* border: 1px dashed yellowgreen; */
 }
 
-#hero article:last-of-type {
+#hero .bloc:last-of-type {
   justify-content: center;
 }
 
-#hero article:last-of-type a {
+#hero .bloc:last-of-type a {
   background-image: url(/assets/img/BrushStroke.png);
 }
 
-#hero article a {
+#hero .bloc a {
   display: block;
   background-color: #F6F5EF;
   text-transform: uppercase;
@@ -151,6 +164,7 @@ section {
 #counter {
   display: flex;
   margin-bottom: 1rem;
+  justify-content: space-evenly;
 }
 
 .counterDay {
@@ -161,11 +175,12 @@ section {
 }
 
 .separator {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .counterDay span:first-child {
-  font-size: 4rem;
+  font-size: 3.8rem;
+  font-family: "spartan-light";
 }
 
 .counterDay span:last-child {
@@ -174,20 +189,6 @@ section {
 }
 /* COUNTER END */
 
-#menu {
-  min-height: 100vh;
-  border: 1px solid red;
-  background-image: url("../img/bgBase.png");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  background-color: var(--color-primary);
-  display: flex;
-  justify-content: space-evenly;
-}
 
 .moveDown {
   position: absolute;

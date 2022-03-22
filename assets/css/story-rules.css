@@ -1,27 +1,32 @@
 
 h2 {
   margin: 0 auto;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   color: white;
   font-family: vanilla , sans-serif;
-                                                
+  background-image: ../img/BrushStroke.png;
+                                             
 }
 p {
   color: white;
   font-family:  'spartan-regular', sans-serif;
-  padding: 10px;
   font-size: 1rem;
+  text-align: center;
 }
 #story img {
-  border-radius: 0.8rem 0 0 0.8rem ;
+  border-radius: 0.8rem;
+  width: 100%;
+
 }
 #rules img {
-  border-radius: 0 0.8rem 0.8rem 0;
+  border-radius:0.8rem;
+  width: 100%;
 }
 #story-rules {
-  border: 0.5rem solid;
-  border-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #story {
   background-color: #333333;
@@ -38,13 +43,40 @@ p {
     background-image: url(../img/bgBase.png);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   #story  {
     display: flex;
+    justify-content: space-between;
+    align-items: strech;
   }
   #rules {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
   }
-  
+  #story img {
+    border-radius: 0.8rem 0 0 0.8rem;
+  } 
+  #rules img {
+  border-radius:0 0.8rem 0.8rem 0;
+  }
+  .title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .title-text h2 {
+    padding-bottom: 3rem;
+  }
+  h2 {
+    margin-top: 1.2rem;
+  }
+  p {
+    margin: 0 1rem;
+  }
+
+
 }
