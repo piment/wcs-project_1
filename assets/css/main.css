@@ -3,24 +3,38 @@
   src: url("../fonts/vanilla\ whale.otf") format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap');
+@font-face {
+  font-family: "spartan-regular";
+  src: url("../fonts/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+  font-family: "spartan-bold";
+  src: url("../fonts/static/LeagueSpartan-Bold.ttf");
+}
+@font-face {
+  font-family: "spartan-light";
+  src: url("../fonts/static/LeagueSpartan-Light.ttf");
+}
+@font-face {
+  font-family: "spartan-medium";
+  src: url("../fonts/static/LeagueSpartan-Medium.ttf");
+}
 
 :root {
-  --color-primary: #BD2A21;
+  --color-primary: #BB3F37;
   --color-secondary: #333333;
   --color-tiercary: #F6F5EF;
+  scroll-behavior: smooth;
 }
 
 /* RESET SETTINGS */
-html, body {
-  margin: 0;
-  padding: 0
-}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* END RESET SETTINGS */
-
 
 body {
   display: flex;
@@ -29,7 +43,8 @@ body {
   height: 100vh;
   color: var(--color-tiercary);
   background-color: var(--color-secondary);
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'spartan-light', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -46,7 +61,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: vanilla;
-  height: 3rem;
+  min-height: 2rem;
 }
 
 header h1 {
@@ -58,7 +73,7 @@ header h1 {
 
 header h1 img {
   margin-right: 0.5rem;
-  height: 2.5rem;
+  height: 1.5rem;
 }
 
 header i {
@@ -78,22 +93,106 @@ header nav {
 header .menu {
   display: none;
 }
+section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  min-height: calc(100vh - 2rem);
+}
 
 #hero {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.jpg);
+  background-position: center 0;
   background-size: cover;
+}
+
+#logo {
+  width: 100vw;
+}
+#hero article {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: calc((100vh - 2rem) / 3);
+  /* border: 1px dashed yellowgreen; */
 }
-#logo {
-  width: 80vw;
+
+#hero article:last-of-type {
+  justify-content: center;
 }
-section {
-  height: 100%;
+
+#hero article:last-of-type a {
+  background-image: url(/assets/img/BrushStroke.png);
 }
+
+#hero article a {
+  display: block;
+  background-color: #F6F5EF;
+  text-transform: uppercase;
+  padding: 1rem 30px 0.8rem;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
+  font-family: "spartan-medium";
+  font-size: 1rem;
+  color: #BD2A21;
+}
+
+/* COUNTER START */
+
+.counterText {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#counter {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.counterDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+}
+
+.separator {
+  font-size: 4rem;
+}
+
+.counterDay span:first-child {
+  font-size: 4rem;
+}
+
+.counterDay span:last-child {
+  font-size: 1.5rem;
+  font-family: "spartan-medium";
+}
+/* COUNTER END */
+
+#menu {
+  min-height: 100vh;
+  border: 1px solid red;
+  background-image: url("../img/bgBase.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-evenly;
+}
+
+.moveDown {
+  position: absolute;
+  z-index: 1;
+  margin-top: auto;
+  animation: 1.5s ease-in 1s infinite both slideUp;
+  color: var(--color-primary);
 }
