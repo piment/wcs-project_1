@@ -1,3 +1,13 @@
+@font-face 
+{
+    font-family: vanilla;
+    src: url(“../fonts/vanilla\ whale.otf”) format(“opentype”);
+}
+@font-face
+{
+    font-family: Spartan;
+    src: url(“https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap”);
+}
 body
 {
     background-image: url(assets/img/bgBase.png);
@@ -9,6 +19,8 @@ body
     justify-content: center;
     align-content: center;
     padding-top: 2rem;
+    font-family: vanilla;
+    font-size: 4rem;
 }
 #hof
 {
@@ -24,7 +36,7 @@ body
 {
     background-color: #BD2A21;
     padding : 0.5rem;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 .tileTitle>h2
 {
@@ -32,6 +44,7 @@ body
     justify-content: center;
     align-items: center;
     padding-top: 0.5rem;
+    font-family: Spartan;
 }
 .flip-card
 {
@@ -350,12 +363,12 @@ body
 display: flex;   
 align-items: center;
 justify-content: center;
-border-radius: 0.8rem 0.8rem 0 0rem;
+border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/arcs/ArcFIRE.png);
+background-image: url(assets/img/variante/cloclo.webp);
 background-color: black;
 background-position: center;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 }
 #imgBackTiles1
@@ -363,7 +376,7 @@ background-repeat: no-repeat;
     display: flex;   
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem 0.8rem 0 0rem;
+    border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
     background-image: url(assets/img/arcs/Electric\ Arc.png);
     background-color: black;
@@ -376,9 +389,9 @@ background-repeat: no-repeat;
 display: flex;   
 align-items: center;
 justify-content: center;
-border-radius: 0.8rem 0.8rem 0 0rem;
+border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid#BD2A21;
-background-image: url(assets/img/arcs/ArcFIRE.png);
+background-image: url(assets/img/variante/jeannedarc.jpg);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -389,9 +402,9 @@ background-repeat: no-repeat;
     display: flex;   
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem 0.8rem 0 0rem;
+    border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Electric\ Arc.png);
+    background-image: url(assets/img/arcs/ArcFIRE.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -402,9 +415,9 @@ background-repeat: no-repeat;
 display: flex;   
 align-items: center;
 justify-content: center;
-border-radius: 0.8rem 0.8rem 0 0rem;
+border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/arcs/ArcFIRE.png);
+background-image: url(assets/img/variante/vador.jpg);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -415,9 +428,9 @@ background-repeat: no-repeat;
     display: flex;   
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem 0.8rem 0 0rem;
+    border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Electric\ Arc.png);
+    background-image: url(assets/img/arcs/ArcVad.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -428,9 +441,9 @@ background-repeat: no-repeat;
 display: flex;   
 align-items: center;
 justify-content: center;
-border-radius: 0.8rem 0.8rem 0 0rem;
+border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/arcs/ArcFIRE.png);
+background-image: url(assets/img/variante/Louis\ SansTete.png);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -441,9 +454,9 @@ background-repeat: no-repeat;
     display: flex;   
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem 0.8rem 0 0rem;
+    border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Electric\ Arc.png);
+    background-image: url(assets/img/arcs/Arcseeker.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -454,9 +467,9 @@ background-repeat: no-repeat;
 display: flex;   
 align-items: center;
 justify-content: center;
-border-radius: 0.8rem 0.8rem 0 0rem;
+border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/arcs/ArcFIRE.png);
+background-image: url(assets/img/variante/triomphe.jpeg);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -467,9 +480,9 @@ background-repeat: no-repeat;
     display: flex;   
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem 0.8rem 0 0rem;
+    border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Electric\ Arc.png);
+    background-image: url(assets/img/arcs/Arc\ Triomphe.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -480,12 +493,12 @@ background-repeat: no-repeat;
 display: flex;   
 align-items: center;
 justify-content: center;
-border-radius: 0.8rem 0.8rem 0 0rem;
+border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/bgBase.png);
-background-color: black;
+background-image: url(assets/img/arcs/ArcBACKGROUND.png);
+background-color: white;
 background-position: center;
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 }
 #imgBackTiles6
@@ -493,18 +506,31 @@ background-repeat: no-repeat;
     display: flex;   
     align-items: center;
     justify-content: center;
-    border-radius: 0.8rem 0.8rem 0 0rem;
+    border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/bgBase.png);
-    background-color: black;
+    background-image: url(assets/img/arcs/ArcBACKGROUND.png);
+    background-color: white;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #tilesLink
 {
+    display: flex;
     border: solid #BD2A21;
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white ;
+    margin: 1rem;
+}
+#legendPlace
+{
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white ;
+    font-family: Spartan;
 }
 
 @media screen and (min-width: 400px)
