@@ -14,7 +14,7 @@ slider.oninput = () => {
     output.innerHTML = "Un peu plus de Nivea";
   } else if (slider.value < 80) {
     output.innerHTML = "Et le reste";
-  } else if (slider.value > 80) {
+  } else if (slider.value >= 80) {
     output.innerHTML = "Accordéon";
   }
 };
