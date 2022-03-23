@@ -50,3 +50,50 @@ function moveHeroButtonWithScreenSize(elementToMoveClass) {
 // window.onresize(moveHeroButtonWithScreenSize('.hero-button'));
 window.addEventListener('resize', () => moveHeroButtonWithScreenSize('.hero-button'));
 document.addEventListener('resize', () => console.log('resize'));
+
+const menuCards = [
+  {
+    title: 'Histoire & Règles',
+    icon: '',
+    text: "Découvrez l’histoire de la roulette indienne, son créateur, ainsi que ses règles."
+  },
+  {
+    title: 'Hall of Fame',
+    icon: '',
+    text: "La Roulette Indienne possède nombres de variantes, chacune avec son champion incontesté."
+  },
+  {
+    title: 'Contact & Inscription',
+    icon: '',
+    text: "Vous souhaitez nous contacter pour obtenir plus de renseignement? Voir directement vous inscrire à la prochaine session?"
+  }
+];
+
+class CardElement extends HTMLElement {
+  constructor() {
+    super();
+    const logoTile = document.createElement('div');
+    logoTile.classList.add('logoTiles');
+    //this.appendChild(logoTile);
+
+    const article = document.createElement('div');
+    article.classList.add('article');
+    
+
+    const title = document.createElement('h1');
+    title.textContent = this.attributes.title.value;
+    article.appendChild(title);
+
+    const paragraph = document.createElement('p');
+    paragraph.textContent = 'text de test!!!';
+    article.appendChild(paragraph);
+    this.appendChild(article);
+  }
+}
+
+customElements.define('card-element', CardElement);
+
+const section = document.querySelector('#cardMenu');
+menuCards.forEach((card) => {
+  section.innerHTML += '<card-element />';
+});

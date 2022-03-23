@@ -63,7 +63,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: vanilla;
-  min-height: 2rem;
+  min-height: 3rem;
 }
 
 header h1 {
@@ -107,8 +107,6 @@ footer {
 .base-section {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: stretch;
   align-items: center;
   min-height: calc(100vh - 2rem);
 }
@@ -129,6 +127,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 30vh;
+  border: 1px solid red;
 }
 
 #hero .bloc:first-of-type {
