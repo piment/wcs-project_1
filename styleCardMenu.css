@@ -22,9 +22,7 @@ body
     margin-top: 5rem;
     flex-wrap: wrap;
     height: 12rem; 
-
 }
-
 
 .article
 {
@@ -34,9 +32,7 @@ body
     background-image: url(assets/img/featherRed.png);
     background-position: right center;
     background-size: 20%;
-    background-repeat: no-repeat;
-    
-    
+    background-repeat: no-repeat;    
 }
 
 
@@ -78,6 +74,28 @@ padding-top: 1rem;
 display: flex;   
 align-items: center;
 justify-content: center;
-background-color: red;
+background-color: #BD2A21;
 border-radius: 0.8rem 0 0 0.8rem;
+}
+
+@media screen and (min-width: 400px)
+{
+    #cardMenu
+    {
+        display: flex;
+        flex-direction: row;  
+    }
+    .hallOfFame
+    {
+        margin-top: 8rem;
+    }
+    .contact
+    {
+        margin-top: 8rem;
+    }
+    .historyAndRules
+    {
+        margin-top: 8rem;
+    }
+
 }
