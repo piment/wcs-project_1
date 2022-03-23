@@ -1,12 +1,16 @@
-
 h2 {
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   color: white;
   font-family: vanilla , sans-serif;
-  background-image: ../img/BrushStroke.png;
-                                             
+  background-image: url('../img/BrushStroke.png');
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: right;                                        
+}
+h3 {
+  display: none;
 }
 p {
   color: white;
@@ -15,15 +19,19 @@ p {
   text-align: center;
 }
 #story img {
-  border-radius: 0.8rem;
+  border-radius: 0.8rem 0.8rem 0 0 ;
   width: 100%;
+  height: 220px;
 
 }
 #rules img {
-  border-radius:0.8rem;
+  border-radius:0.8rem 0.8rem 0 0;
   width: 100%;
+  height: 220px;
 }
 #story-rules {
+  height: 100%;
+  background-image: url(../img/bgBase.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +48,6 @@ p {
 }
 @media screen and (min-width: 360px) {
   #story-rules {
-    background-image: url(../img/bgBase.png);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,9 +65,13 @@ p {
   }
   #story img {
     border-radius: 0.8rem 0 0 0.8rem;
+    width: 100%;
+    height: 100%;
   } 
   #rules img {
-  border-radius:0 0.8rem 0.8rem 0;
+    border-radius:0 0.8rem 0.8rem 0;
+    width: 100%;
+    height: 100%;
   }
   .title-text {
     display: flex;
@@ -68,15 +79,25 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .title-text h2 {
-    padding-bottom: 3rem;
+  h3 {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: white;
+    font-family: vanilla , sans-serif;
+    background-image: url('../img/BrushStroke.png');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 5rem;
+    width: 100%;
+    display: block;
   }
   h2 {
-    margin-top: 1.2rem;
+   display: none;
   }
   p {
-    margin: 0 1rem;
+    font-size: 1.3rem;
+    margin: 1rem 2.5rem;
+    margin-top: 3rem;
   }
-
-
 }
