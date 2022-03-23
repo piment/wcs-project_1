@@ -10,7 +10,7 @@
 }
 body
 {
-    background-image: url(assets/img/bgBase.png);
+    background-image: url(/assets/img/bgBase.png);
     background-attachment: fixed;
 }
 .primaryTitle
@@ -365,7 +365,7 @@ align-items: center;
 justify-content: center;
 border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/variante/cloclo.webp);
+background-image: url(/assets/img/variante/cloclo.webp);
 background-color: black;
 background-position: center;
 background-size: cover;
@@ -378,7 +378,7 @@ background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Electric\ Arc.png);
+    background-image: url(/assets/img/arcs/Electric\ Arc.png);
     background-color: black;
     background-position: center;
     background-size: contain;
@@ -391,10 +391,10 @@ align-items: center;
 justify-content: center;
 border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid#BD2A21;
-background-image: url(assets/img/variante/jeannedarc.jpg);
+background-image: url(/assets/img/variante/jeannedarc.jpg);
 background-color: black;
 background-position: center;
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 }
 #imgBackTiles2
@@ -404,7 +404,7 @@ background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/ArcFIRE.png);
+    background-image: url(/assets/img/arcs/ArcFIRE.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -417,7 +417,7 @@ align-items: center;
 justify-content: center;
 border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/variante/vador.jpg);
+background-image: url(/assets/img/variante/vador.jpg);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -430,10 +430,10 @@ background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/ArcVad.png);
+    background-image: url(/assets/img/arcs/ArcVad.png);
     background-color: black;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #imgFrontTiles4
@@ -443,7 +443,7 @@ align-items: center;
 justify-content: center;
 border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/variante/Louis\ SansTete.png);
+background-image: url(/assets/img/variante/Louis\ SansTete.png);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -456,7 +456,7 @@ background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Arcseeker.png);
+    background-image: url(/assets/img/arcs/Arcseeker.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -469,7 +469,7 @@ align-items: center;
 justify-content: center;
 border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/variante/triomphe.jpeg);
+background-image: url(/assets/img/variante/triomphe.jpeg);
 background-color: black;
 background-position: center;
 background-size: 100%;
@@ -482,7 +482,7 @@ background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/Arc\ Triomphe.png);
+    background-image: url(/assets/img/arcs/Arc\ Triomphe.png);
     background-color: black;
     background-position: center;
     background-size: 100%;
@@ -495,7 +495,7 @@ align-items: center;
 justify-content: center;
 border-radius: 0.5rem 0.5rem 0 0rem;
 border: solid #BD2A21;
-background-image: url(assets/img/arcs/ArcBACKGROUND.png);
+background-image: url(/assets/img/arcs/ArcBACKGROUND.png);
 background-color: white;
 background-position: center;
 background-size: cover;
@@ -508,7 +508,7 @@ background-repeat: no-repeat;
     justify-content: center;
     border-radius: 0.5rem 0.5rem 0 0rem;
     border: solid #BD2A21;
-    background-image: url(assets/img/arcs/ArcBACKGROUND.png);
+    background-image: url(/assets/img/arcs/ArcBACKGROUND.png);
     background-color: white;
     background-position: center;
     background-size: cover;
@@ -533,7 +533,7 @@ background-repeat: no-repeat;
     font-family: Spartan;
 }
 
-@media screen and (min-width: 400px)
+@media screen and (min-width: 700px)
 {
     #hof
     {
