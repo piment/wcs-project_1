@@ -17,4 +17,21 @@ slider.oninput = () => {
   } else if (slider.value >= 80) {
     output.innerHTML = "Accordéon";
   }
-};
+}
+function open_infos()
+{
+    width = 100;
+    height = 100;
+    if(window.innerWidth)
+  {
+  var left = (window.innerWidth-width)/2;
+  var top = (window.innerHeight-height)/2;
+  }
+  else
+  {
+  var left = (document.body.clientWidth-width);
+  var top = (document.body.clientHeight-height);
+  }
+  window.open('popup.html','nom_de_ma_popup', width=200, height=200);
+}
+ 

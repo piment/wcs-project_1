@@ -292,6 +292,11 @@ justify-content: flex-end; */
       padding-bottom: 1rem;
       margin: 0;
     }
+    .popup{
+      /* background-image: url(/assets/img/TacOS.png);
+      background-size: auto; */
+      width: 100%;
+    }
     /* #why:not(li){
       justify-content: center;
       margin-left: 0rem;
