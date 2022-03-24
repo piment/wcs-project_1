@@ -56,5 +56,11 @@ const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.fas.fa-bars');
 
 menuBtn.addEventListener('click', ev => {
-  menu.style.top === '-10rem' ? menu.style.top = '3rem' : menu.style.top = '-10rem';
+  if (menu.style.left === '-16rem') {
+    menu.style.left = '0';
+    menuBtn.style.transform = 'rotateY(75deg)';
+  } else {
+    menu.style.left = '-16rem';
+    menuBtn.style.transform = 'rotateY(0)';
+  }
 })

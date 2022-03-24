@@ -1,132 +1,68 @@
-@font-face 
-{
-    font-family: vanilla;
-    src: url(“../fonts/vanilla\ whale.otf”) format(“opentype”);
-}
-@font-face
-{
-    font-family: Spartan;
-    src: url(“https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap”);
-}
-body
-{
-    background-image: url(/assets/img/bgBase.png);
-    background-attachment: fixed;
-
-}
-
-#cardMenu
-{
+#cardMenu {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 1rem;
     min-height: 100vh;
+    padding: 1rem;
     
 }
-.index-menu-card
-{
+
+.index-menu-card {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 0 1rem;
-    flex-wrap: wrap;
-    height: 12rem; 
+    height: 20%; 
 }
 
-.article
-{
+.article {
     background-color: #333333;
     padding : 0.5rem;
     border-radius: 0 0.8rem 0.8rem 0;
-    background-image: url(/assets/img/featherRed.png);
+    background-image: url('../img/featherRed.png');
     background-position: 95% 95%;
     background-size: 20%;
     background-repeat: no-repeat;    
     font-family: Spartan;
 }
 
-
-.article > h1
-{
-padding-bottom: 2rem;
-padding-top: 1rem;
+.article > h2 {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    font-family: vanille;
 }
 
-
-.hallOfFame
-{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 1rem;
-    flex-wrap: wrap;
-    height: 12rem; 
-
-}
-.contact
-{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 1rem;
-    flex-wrap: wrap;
-    height: 12rem; 
-    margin-bottom: 10rem;
+.logoTiles { 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: #BD2A21;
+    border-radius: 0.8rem 0 0 0.8rem;
 }
 
-.logoTiles
-{ 
-display: flex;   
-align-items: center;
-justify-content: center;
-background-color: #BD2A21;
-border-radius: 0.8rem 0 0 0.8rem;
-}
-.menuLink
-{
-    display: flex;
+.menuLink {
+    display: block;
+    text-align: center;
     margin-top: 1.5rem;
     background-color: #BD2A21;
     border: solid #BD2A21;
     border-radius: 0.5rem;
-    width: fit-content;
-}
-.logoTiles>p
-{
-font-size: 3rem;
+    width: 100%;
+    padding: 0.2rem 0;
 }
 
-@media screen and (min-width: 600px)
-{
-    #cardMenu
-    {
+.logoTiles > i {
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    #cardMenu {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;  
     }
-    .hallOfFame
-    {
-        margin-top: 8rem;
-        height: 20rem;
-    }
-    .contact
-    {
-        margin-top: 8rem;
-        height: 20rem;
-    }
-    .historyAndRules
-    {
-        margin-top: 8rem;
-        height: 20rem;
-    }
-
 }
