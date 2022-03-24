@@ -56,5 +56,18 @@ const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.fas.fa-bars');
 
 menuBtn.addEventListener('click', ev => {
-  menu.style.top === '-10rem' ? menu.style.top = '3rem' : menu.style.top = '-10rem';
+  menu.style.top === '-10rem' ? (menu.style.top = '3rem') : (menu.style.top = '-10rem');
 })
+
+class CardElement extends HTMLElement {
+  constructor(title) {
+    super();
+    this.title = title;
+    this.textContent = this.title;
+  }
+}
+
+window.customElements.define('card-element', CardElement);
+const card = new CardElement("testttettet");
+
+document.querySelector('#bigFooter').appendChild(card);

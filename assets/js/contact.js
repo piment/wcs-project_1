@@ -18,6 +18,7 @@ slider.oninput = () => {
     output.innerHTML = "Accordéon";
   }
 }
+
 function open_infos()
 {
     width = 100;
@@ -32,6 +33,10 @@ function open_infos()
   var left = (document.body.clientWidth-width);
   var top = (document.body.clientHeight-height);
   }
-  window.open('popup.html','nom_de_ma_popup', width=200, height=200);
+  window.open('popup.html','nom_de_ma_popup', 'fullscreen: yes');
 }
  
+document.querySelector('.tacos').addEventListener('click', (ev) => {
+  ev.currentTarget.value === "tacos" ? open_infos() : console.log(false);
+})
+
