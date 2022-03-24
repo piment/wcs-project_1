@@ -1,5 +1,25 @@
-h2 {
-  margin: 0 auto;
+
+#story-rules {
+  height: 100%;
+  background-image: url(../img/bgBase.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#story {
+  width: 22rem;
+  background-color: #333333;
+  border-radius: 0.8rem;
+  margin: 2rem 2.5rem 1rem 2.5rem;
+}
+#rules {
+  width: 22rem;
+  background-color: #333333;
+  border-radius: 0.8rem;
+  margin: 1.5rem 2rem 1rem 2rem;
+}
+.title-mobile {
+  margin: 1.5rem 0 0 0;
   font-size: 2.5rem;
   text-align: center;
   color: white;
@@ -9,77 +29,50 @@ h2 {
   background-repeat: no-repeat;
   background-position: right;                                        
 }
-h3 {
+.title-desktop {
   display: none;
+}
+.imghistory {
+  width: 100%;
+  height: 170px;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.imgrules {
+  width: 100%;
+  height: 170px;
+  border-radius: 0.8rem 0.8rem 0 0;
 }
 p {
   color: white;
   font-family:  'spartan-regular', sans-serif;
   font-size: 1rem;
   text-align: center;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  padding: 0.2rem 0 1rem 0;
 }
-#story img {
-  border-radius: 0.8rem 0.8rem 0 0 ;
-  width: 100%;
-  height: 220px;
 
-}
-#rules img {
-  border-radius:0.8rem 0.8rem 0 0;
-  width: 100%;
-  height: 220px;
-}
-#story-rules {
-  height: 100%;
-  background-image: url(../img/bgBase.png);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#story {
-  background-color: #333333;
-  border-radius: 0.8rem;
-  margin: 1rem;
-}
-#rules {
-  background-color: #333333;
-  border-radius: 0.8rem;
-  margin: 1rem;
-}
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 450px) {
   #story-rules {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   #story  {
+    width: 46rem;
+    margin: 3.5rem 3.5rem 2rem 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: strech;
   }
   #rules {
+    width: 46rem;
+    margin: 2rem 4rem 4rem 4rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: stretch;
   }
-  #story img {
-    border-radius: 0.8rem 0 0 0.8rem;
-    width: 100%;
-    height: 100%;
-  } 
-  #rules img {
-    border-radius:0 0.8rem 0.8rem 0;
-    width: 100%;
-    height: 100%;
-  }
-  .title-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  h3 {
+  .title-desktop {
     margin-top: 2.5rem;
     text-align: center;
     color: white;
@@ -88,15 +81,31 @@ p {
     background-size: 85%;
     background-repeat: no-repeat;
     background-position: right;
-    font-size: 5rem;
+    font-size: 4rem;
     width: 100%;
     display: block;
   }
-  h2 {
+  .title-mobile {
    display: none;
   }
+  .imghistory {
+    border-radius: 0.8rem 0 0 0.8rem;
+    width: 100%;
+    height: 370px;
+  } 
+  .imgrules{
+    border-radius:0 0.8rem 0 0.8rem;
+    width: 100%;
+    height: 350px;
+  }
+  .title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 1rem 2.5rem;
     margin-top: 3rem;
   }
