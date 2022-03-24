@@ -48,12 +48,12 @@
           <div class="form-input">
           <!-- <div id="platpref"> -->
             <label for="platpréféré">Plat préféré:</label>
-            <select name="plats" id="plats">
+            <select name="plats" id="plats" class="tacos">
               <option value="" id="platselect">
                 ------------------------------
               </option>
               <option value="pizza">Pizza</option>
-              <option value="tacos">Tacos</option>
+              <option  value="tacos" onclick="javascript:open_infos()">Tacos</option>
               <option value="pringles">Pringles</option>
               <option value="tartiflette">Tartiflette</option>
               <option value="milkshake">Milkshake à la crevette</option>
@@ -125,20 +125,11 @@
           <input type="submit" id="submit" value="Submit" />
         </div>
       </form>
+      <h2 id="legendes-contact">Contactez nos légendes</h2>
+      <div class="contact-legendes">
+          <button id="print">Print</button>  
+      </div>  
     </div>
-    <!-- <div id="contact">
-    <h1></h1>
-    <form id="contactForm">
-      <label for="name">First name:</label><br>
-      <input type="text" id="name" name="name" ><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" ><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea>
-      <br><br>
-      <input type="submit" value="Submit">
-    </form> 
-  </div>-->
     <footer>
       <a href="#">Lien 1</a>
       <a href="#">Lien 2</a>
