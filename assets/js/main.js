@@ -30,3 +30,31 @@ const getCounter = (startDay, sessionInterval) => {
 };
 
 setInterval(getCounter, 1000, dayOfFirstSession, daysBetweenSession);
+
+// Function to move the hero button (mobil => desktop / desktop => mobil);
+function moveHeroButtonWithScreenSize(elementToMoveClass) {
+  // console.log(window);
+  if (window.innerWidth > 720) {
+    const el = document.querySelector(elementToMoveClass);
+    const parent = document.querySelector('.hero-logo');
+    parent.appendChild(el);
+    console.log('move to desktop');
+  } else {
+    const el = document.querySelector(elementToMoveClass);
+    const parent = document.querySelector('.hero-button-bloc');
+    parent.appendChild(el);
+    console.log('move to mobil');
+  }
+}
+
+// window.onresize(moveHeroButtonWithScreenSize('.hero-button'));
+window.addEventListener('resize', () => moveHeroButtonWithScreenSize('.hero-button'));
+document.addEventListener('resize', () => console.log('resize'));
+
+// Nav menu slide down
+const menu = document.querySelector('.menu');
+const menuBtn = document.querySelector('.fas.fa-bars');
+
+menuBtn.addEventListener('click', ev => {
+  menu.style.top === '-10rem' ? menu.style.top = '3rem' : menu.style.top = '-10rem';
+})

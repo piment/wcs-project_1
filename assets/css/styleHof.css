@@ -1,0 +1,548 @@
+@font-face 
+{
+    font-family: vanilla;
+    src: url(“../fonts/vanilla\ whale.otf”) format(“opentype”);
+}
+@font-face
+{
+    font-family: Spartan;
+    src: url(“https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;900&display=swap”);
+}
+body
+{
+    background-image: url(/assets/img/bgBase.png);
+    background-attachment: fixed;
+}
+.primaryTitle
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2rem;
+    font-family: vanilla;
+    font-size: 4rem;
+}
+#hof
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 150rem;
+    padding-left: 2rem;
+}
+.tileTitle
+{
+    background-color: #BD2A21;
+    padding : 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.tileTitle>h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    font-family: Spartan;
+}
+.flip-card
+{
+ perspective: 1000px;
+ width: 100%;
+}
+.VarianteCard1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .VarianteCard1 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront1, .varianteBack1 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.varianteFront1 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront1
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.varianteBack1
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.VarianteCard2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .VarianteCard2 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront2, .varianteBack2 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.varianteFront2 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.varianteBack2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.VarianteCard3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .VarianteCard3 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront3, .varianteBack3 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.varianteFront3 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront3
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.varianteBack3
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.VarianteCard4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .VarianteCard4 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront4, .varianteBack4 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.varianteFront4 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront4
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.varianteBack4
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.VarianteCard5
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .VarianteCard5 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront5, .varianteBack5 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.varianteFront5
+{
+    transform: rotateY(180deg);
+}
+.varianteFront5
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.varianteBack5
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.VarianteCard6
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .VarianteCard6
+{
+    transform: rotateY(180deg);
+}
+.varianteFront6, .varianteBack6 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.varianteFront6 
+{
+    transform: rotateY(180deg);
+}
+.varianteFront6
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+.varianteBack6
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    height: 20rem;    
+}
+
+#imgFrontTiles1
+{ 
+display: flex;   
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem 0.5rem 0 0rem;
+border: solid #BD2A21;
+background-image: url(/assets/img/variante/cloclo.webp);
+background-color: black;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#imgBackTiles1
+{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem 0.5rem 0 0rem;
+    border: solid #BD2A21;
+    background-image: url(/assets/img/arcs/Electric\ Arc.png);
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#imgFrontTiles2
+{ 
+display: flex;   
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem 0.5rem 0 0rem;
+border: solid#BD2A21;
+background-image: url(/assets/img/variante/jeannedarc.jpg);
+background-color: black;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#imgBackTiles2
+{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem 0.5rem 0 0rem;
+    border: solid #BD2A21;
+    background-image: url(/assets/img/arcs/ArcFIRE.png);
+    background-color: black;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#imgFrontTiles3
+{ 
+display: flex;   
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem 0.5rem 0 0rem;
+border: solid #BD2A21;
+background-image: url(/assets/img/variante/vador.jpg);
+background-color: black;
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+#imgBackTiles3
+{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem 0.5rem 0 0rem;
+    border: solid #BD2A21;
+    background-image: url(/assets/img/arcs/ArcVad.png);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#imgFrontTiles4
+{ 
+display: flex;   
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem 0.5rem 0 0rem;
+border: solid #BD2A21;
+background-image: url(/assets/img/variante/Louis\ SansTete.png);
+background-color: black;
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+#imgBackTiles4
+{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem 0.5rem 0 0rem;
+    border: solid #BD2A21;
+    background-image: url(/assets/img/arcs/Arcseeker.png);
+    background-color: black;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#imgFrontTiles5
+{ 
+display: flex;   
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem 0.5rem 0 0rem;
+border: solid #BD2A21;
+background-image: url(/assets/img/variante/triomphe.jpeg);
+background-color: black;
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+#imgBackTiles5
+{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem 0.5rem 0 0rem;
+    border: solid #BD2A21;
+    background-image: url(/assets/img/arcs/Arc\ Triomphe.png);
+    background-color: black;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#imgFrontTiles6
+{ 
+display: flex;   
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem 0.5rem 0 0rem;
+border: solid #BD2A21;
+background-image: url(/assets/img/arcs/ArcBACKGROUND.png);
+background-color: white;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#imgBackTiles6
+{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem 0.5rem 0 0rem;
+    border: solid #BD2A21;
+    background-image: url(/assets/img/arcs/ArcBACKGROUND.png);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#tilesLink
+{
+    display: flex;
+    border: solid #BD2A21;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white ;
+    margin: 1rem;
+}
+#legendPlace
+{
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white ;
+    font-family: Spartan;
+}
+
+@media screen and (min-width: 700px)
+{
+    #hof
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        min-height: 0;
+        height: 100%;
+    }
+}   
