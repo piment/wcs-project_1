@@ -51,3 +51,10 @@ function moveHeroButtonWithScreenSize(elementToMoveClass) {
 window.addEventListener('resize', () => moveHeroButtonWithScreenSize('.hero-button'));
 document.addEventListener('resize', () => console.log('resize'));
 
+// Nav menu slide down
+const menu = document.querySelector('.menu');
+const menuBtn = document.querySelector('.fas.fa-bars');
+
+menuBtn.addEventListener('click', ev => {
+  menu.style.top === '-10rem' ? menu.style.top = '3rem' : menu.style.top = '-10rem';
+})

@@ -64,6 +64,7 @@ header {
   align-items: center;
   font-family: vanilla;
   min-height: 3rem;
+  z-index: 2;
 }
 
 header h1 {
@@ -88,12 +89,17 @@ header i:hover {
   padding-bottom: 1rem;
 }
 
-header nav {
-  display: none;
-}
-
-header .menu {
-  display: none;
+.menu {
+  display: block;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  font-size: 2rem;
+  padding: 0 1rem;
+  background-color: var(--color-primary);
+  transition: top 1s;
+  z-index: 0;
+  list-style-type: none;
 }
 
 footer {
