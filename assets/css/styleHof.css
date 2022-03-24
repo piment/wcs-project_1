@@ -41,11 +41,12 @@ body
 .tileTitle>h2
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 0.5rem;
     font-family: Spartan;
+    justify-content: flex-end;
+    gap: 5rem;
 }
+
 .flip-card
 {
  perspective: 1000px;
@@ -381,7 +382,7 @@ background-repeat: no-repeat;
     background-image: url(/assets/img/arcs/Electric\ Arc.png);
     background-color: black;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #imgFrontTiles2
@@ -407,7 +408,7 @@ background-repeat: no-repeat;
     background-image: url(/assets/img/arcs/ArcFIRE.png);
     background-color: black;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #imgFrontTiles3
@@ -459,7 +460,7 @@ background-repeat: no-repeat;
     background-image: url(/assets/img/arcs/Arcseeker.png);
     background-color: black;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #imgFrontTiles5
@@ -472,7 +473,7 @@ border: solid #BD2A21;
 background-image: url(/assets/img/variante/triomphe.jpeg);
 background-color: black;
 background-position: center;
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 }
 #imgBackTiles5
@@ -521,8 +522,9 @@ background-repeat: no-repeat;
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2rem;
-    color: white ;
+    color: #BD2A21 ;
     margin: 1rem;
+    background-color: #F6F5EF;
 }
 #legendPlace
 {
@@ -531,6 +533,22 @@ background-repeat: no-repeat;
     font-size: 2rem;
     color: white ;
     font-family: Spartan;
+}
+
+.tileContent
+{
+    background-color: #BD2A21;
+    padding : 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.tileContent>p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Spartan;
+    font-size: 1.3rem;
+    gap: 1rem;
 }
 
 @media screen and (min-width: 700px)
@@ -544,5 +562,9 @@ background-repeat: no-repeat;
         grid-row-gap: 0px;
         min-height: 0;
         height: 100%;
+    }
+    .tileTitle>h2
+    {
+        gap: 13rem;
     }
 }   
