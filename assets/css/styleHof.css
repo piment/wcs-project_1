@@ -408,7 +408,7 @@ background-repeat: no-repeat;
     background-image: url(/assets/img/arcs/ArcFIRE.png);
     background-color: black;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #imgFrontTiles3
@@ -460,7 +460,7 @@ background-repeat: no-repeat;
     background-image: url(/assets/img/arcs/Arcseeker.png);
     background-color: black;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #imgFrontTiles5
@@ -473,7 +473,7 @@ border: solid #BD2A21;
 background-image: url(/assets/img/variante/triomphe.jpeg);
 background-color: black;
 background-position: center;
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 }
 #imgBackTiles5
@@ -548,6 +548,7 @@ background-repeat: no-repeat;
     align-items: center;
     font-family: Spartan;
     font-size: 1.3rem;
+    gap: 1rem;
 }
 
 @media screen and (min-width: 700px)
@@ -564,6 +565,6 @@ background-repeat: no-repeat;
     }
     .tileTitle>h2
     {
-        gap: 10rem;
+        gap: 13rem;
     }
 }   
