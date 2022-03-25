@@ -106,38 +106,38 @@
     background-image: url('../img/variante/cloclo.webp');
 }
 #imgBackTiles1 { 
-    background-image: url(/assets/img/arcs/Electric\ Arc.png);
+    background-image: url('../img/arcs/Electric\ Arc.png');
 }
 #imgFrontTiles2 { 
-    background-image: url(/assets/img/variante/jeannedarc.jpg);
+    background-image: url('../img/variante/jeannedarc.jpg');
 }
 
 #imgBackTiles2 { 
-    background-image: url(/assets/img/arcs/ArcFIRE.png);
+    background-image: url('../img/arcs/ArcFIRE.png');
 }
 #imgFrontTiles3 { 
-    background-image: url(/assets/img/variante/vador.jpg);
+    background-image: url('../img/variante/vador.jpg');
 }
 #imgBackTiles3 { 
-    background-image: url(/assets/img/arcs/ArcVad.png);
+    background-image: url('../img/arcs/ArcVad.png');
 }
 #imgFrontTiles4 { 
-    background-image: url(/assets/img/variante/Louis\ SansTete.png);
+    background-image: url('../img/variante/Louis\ SansTete.png');
 }
 #imgBackTiles4 { 
-    background-image: url(/assets/img/arcs/Arcseeker.png);
+    background-image: url('../img/arcs/Arcseeker.png');
 }
 #imgFrontTiles5 { 
-    background-image: url(/assets/img/variante/triomphe.jpeg);
+    background-image: url('../img/variante/triomphe.jpeg');
 }
 #imgBackTiles5 { 
-    background-image: url(/assets/img/arcs/Arc\ Triomphe.png);
+    background-image: url('../img/arcs/Arc\ Triomphe.png');
 }
 #imgFrontTiles6 { 
-    background-image: url(/assets/img/arcs/ArcBACKGROUND.png);
+    background-image: url('../img/arcs/ArcBACKGROUND.png');
 }
 #imgBackTiles6 { 
-    background-image: url(/assets/img/arcs/ArcBACKGROUND.png);
+    background-image: url('../img/arcs/ArcBACKGROUND.png');
 }
 
 #tilesLink {
