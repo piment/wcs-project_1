@@ -23,10 +23,30 @@ const getCounter = (startDay, sessionInterval) => {
   const minute = document.querySelector('.minute');
   const second = document.querySelector('.second');
 
-  day.textContent = `${daysToNextSession.toString().padStart(2, '0')}`;
+  day.textContent = daysToNextSession === 28 ? '00' : `${daysToNextSession.toString().padStart(2, '0')}`;
   hour.textContent = `${newHour.toString().padStart(2, '0')}`;
   minute.textContent = `${newMinute.toString().padStart(2, '0')}`;
   second.textContent = `${newSecond.toString().padStart(2, '0')}`;
 };
 
 setInterval(getCounter, 1000, dayOfFirstSession, daysBetweenSession);
+
+// Function to move the hero button (mobil => desktop / desktop => mobil);
+function moveHeroButtonWithScreenSize(elementToMoveClass) {
+  // console.log(window);
+  if (window.innerWidth > 720) {
+    const el = document.querySelector(elementToMoveClass);
+    const parent = document.querySelector('.hero-logo');
+    parent.appendChild(el);
+    console.log('move to desktop');
+  } else {
+    const el = document.querySelector(elementToMoveClass);
+    const parent = document.querySelector('.hero-button-bloc');
+    parent.appendChild(el);
+    console.log('move to mobil');
+  }
+}
+
+// window.onresize(moveHeroButtonWithScreenSize('.hero-button'));
+window.addEventListener('resize', () => moveHeroButtonWithScreenSize('.hero-button'));
+document.addEventListener('resize', () => console.log('resize'));
