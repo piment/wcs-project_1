@@ -7,54 +7,52 @@
   <title>Native-American Roulette - IFNAR</title>
     <script src="https://kit.fontawesome.com/f9cb11a26f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/story-rules.css"  />             
+  <link rel="stylesheet" type="text/css" href="assets/css/story-rules.css"/>
+  <script src="./assets/js/menuSlide.js" defer></script>             
 </head>
 <body>
   <header>
-    <i class="fas fa-bars"></i>
-    <h1>
-      <img src="./assets/img/NARIFW.png" alt="Logo NARIF">
-    </h1>
-    
     <nav>
+      <i class="fas fa-bars"></i>
       <ul class="menu">
-        <li>Accueil</li>
-        <li>Histoire / Règles</li>
-        <li>Hall of Fame</li>
-        <li>Contact & Inscription</li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="story-rules.html">Histoire / Règles</a></li>
+        <li><a href="hof.html">Hall of Fame</a></li>
+        <li><a href="contact.html">Contact & Inscription</a></li>
       </ul>
     </nav>
+    <h1>
+      <img src="./assets/img/NARIFW_small.png" alt="Logo NARIF">
+    </h1>
   </header>
-   <section id="story-rules">
-     <article>
+  <section id="story-rules">
+    <article>
       <h2 class="title-mobile">Histoire</h2>
-      <div id="story">
-       <img class="imghistory"   src="./assets/img/boston-public-library-_aNkcErd1Cs-unsplash.jpg" alt="image-story" >
-       <div class="title-text">
-       <h3 class="title-desktop">Histoire</h3>
-       <p id="story-text"> La roulette native américaine est un jeu de hasard potentiellement mortel. Souvent passée 
-         sous silence, cette discipline crée en 1812, ce patrimoine, cette transhumance entre deux 
-         mondes a été instauré par le grand Chef Plume de Cheval. <br>
-        Quelques bouts de bois et une corde suffissent à rassembler les peuples pour ces moments chaleureux. </p>
-         </div>
+      <div class="card">
+        <img class="imghistory" src="./assets/img/boston-public-library-_aNkcErd1Cs-unsplash.jpg" alt="image-story" >
+        <div class="title-text">
+          <h3 class="title-desktop">Histoire</h3>
+          <p class="cardText"> La roulette native américaine est un jeu de hasard potentiellement mortel. Souvent passée 
+            sous silence, cette discipline crée en 1812, ce patrimoine, cette transhumance entre deux 
+            mondes a été instauré par le grand Chef Plume de Cheval. <br>
+            Quelques bouts de bois et une corde suffissent à rassembler les peuples pour ces moments chaleureux.
+          </p>
+        </div>
       </div>
-     </article>
-     <article>
+    </article>
+    <article>
       <h2 class="title-mobile">Règles</h2>
-      <div id="rules">
-       <img class="imgrules" src="./assets/img/piotr-makowski-27LH_0jXKYI-unsplash.jpg" alt="image-rules" >
-       <div class="title-text">
-       <h3 class="title-desktop">Règles</h3>
-       <p id="rules-text">Une seule chance mais c'est la bonne !!!!</p>
-       <form>
-         <a class="link-contact" href="contact.html">Inscrivez vous!</a>
-
-       </form>
-         </div>
-         </div>
-     </article>
-   </section> 
-   <footer id="footer">
+      <div class="card rules">
+        <img class="imgrules" src="./assets/img/piotr-makowski-27LH_0jXKYI-unsplash.jpg" alt="image-rules" >
+        <div class="title-text">
+          <h3 class="title-desktop">Règles</h3>
+          <p class="cardText">Une seule chance mais c'est la bonne !!!!</p>
+          <a class="link-contact" href="contact.html">Inscrivez vous!</a>
+        </div>
+      </div>
+    </article>
+  </section> 
+  <footer id="footer">
     <a href="#">Lien 1</a>
     <a href="#">Lien 2</a>
     <a href="#">Lien 3</a>

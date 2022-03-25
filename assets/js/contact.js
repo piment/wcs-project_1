@@ -36,7 +36,7 @@ function open_infos()
   window.open('popup.html','nom_de_ma_popup', 'fullscreen: yes');
 }
  
-document.querySelector('.tacos').addEventListener('click', (ev) => {
+document.querySelector('.tacos').addEventListener('change', (ev) => {
   ev.currentTarget.value === "tacos" ? open_infos() : console.log(false);
 })
 

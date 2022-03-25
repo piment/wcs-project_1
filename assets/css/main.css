@@ -44,7 +44,7 @@ body {
   background-color: var(--color-secondary);
   font-family: 'spartan-light', sans-serif;
   scroll-behavior: smooth;
-  background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.5)), url('../img/bgBase.png');
+  background: linear-gradient(rgba(0, 0, 0,0.8), rgba(0, 0, 0,0.8)), url('../img/bgBase.png');
   background-size: contain; 
 }
 
@@ -91,13 +91,16 @@ header i {
   top: 3rem;
   left: -16rem;
   font-size: 2rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0.5rem;
   background-color: var(--color-primary);
   transition: left 1s;
   z-index: 0;
   list-style-type: none;
 }
 
+.menu a:hover {
+  color: var(--color-secondary);
+}
 footer {
   background-color: var(--color-primary);
   display: flex;
@@ -140,10 +143,6 @@ footer {
   height: 30vh - 2rem;
 }
 
-#hero .bloc:last-of-type a {
-  background-image: url(/assets/img/BrushStroke.png);
-}
-
 #hero .bloc a {
   display: block;
   background-color: #F6F5EF;
@@ -155,6 +154,7 @@ footer {
   font-family: "spartan-medium";
   font-size: 1rem;
   color: #BD2A21;
+  margin-top: -10rem;
 }
 
 /* COUNTER START */
@@ -254,6 +254,57 @@ footer {
 }
 /* END MENU CARD */
 
+/* BIGFOOTER */
+#bigFooter {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+#bigFooter .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#bigFooter .contact p {
+  font-family: 'spartan-medium';
+  text-transform: uppercase;
+  text-decoration: underline;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#bigFooter .contact img {
+  max-height: 8rem;
+}
+
+#bigFooter .partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bigFooter .partners > p {
+  font-family: 'spartan-medium';
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#bigFooter .partners .partner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0 1rem 4rem;
+}
+
+#bigFooter .partners .partner img {
+  max-width: 3rem;
+  margin-right: 1rem;
+
+}
+/* END BIGFOOTER */
 @media screen and (min-width: 600px){
   
   #hero .bloc {

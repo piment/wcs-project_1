@@ -23,7 +23,7 @@ const getCounter = (startDay, sessionInterval) => {
   const minute = document.querySelector('.minute');
   const second = document.querySelector('.second');
 
-  day.textContent = `${daysToNextSession.toString().padStart(2, '0')}`;
+  day.textContent = daysToNextSession === 28 ? '00' : `${daysToNextSession.toString().padStart(2, '0')}`;
   hour.textContent = `${newHour.toString().padStart(2, '0')}`;
   minute.textContent = `${newMinute.toString().padStart(2, '0')}`;
   second.textContent = `${newSecond.toString().padStart(2, '0')}`;
@@ -50,17 +50,3 @@ function moveHeroButtonWithScreenSize(elementToMoveClass) {
 // window.onresize(moveHeroButtonWithScreenSize('.hero-button'));
 window.addEventListener('resize', () => moveHeroButtonWithScreenSize('.hero-button'));
 document.addEventListener('resize', () => console.log('resize'));
-
-// Nav menu slide down
-const menu = document.querySelector('.menu');
-const menuBtn = document.querySelector('.fas.fa-bars');
-
-menuBtn.addEventListener('click', ev => {
-  if (menu.style.left === '-16rem') {
-    menu.style.left = '0';
-    menuBtn.style.transform = 'rotateY(75deg)';
-  } else {
-    menu.style.left = '-16rem';
-    menuBtn.style.transform = 'rotateY(0)';
-  }
-})
