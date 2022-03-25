@@ -30,8 +30,8 @@
 }
 
 .flip-card {
- perspective: 1000px;
- width: 100%;
+    perspective: 1000px;
+    width: 100%;
 }
 
 .card {
@@ -40,7 +40,7 @@
     align-items: center;
     position: absolute;
     width: 90%;
-    height: 90%;
+    height: 100%;
     text-align: center;
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -56,9 +56,9 @@
     grid-template-rows: 5fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 1rem;
-    margin-top: 5rem;
-    height: 20rem;    
+    /* margin: 1rem; */
+    /* margin-top: 5rem; */
+    /* height: 20rem;     */
 }
 
 .cardFront, .cardBack {
@@ -75,9 +75,7 @@
     grid-template-rows: 5fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 1rem;
-    margin-top: 5rem;
-    min-height: 20rem;    
+    /* min-height: 20rem;     */
 }
 
 .frontTile {
@@ -180,7 +178,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 1.5rem;
         min-height: 0;
         height: 100vh;
         margin-bottom: 3rem;
