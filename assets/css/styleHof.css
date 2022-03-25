@@ -103,7 +103,7 @@
 }
 
 #imgFrontTiles1 { 
-    background-image: url(/assets/img/variante/cloclo.webp);
+    background-image: url('../img/variante/cloclo.webp');
 }
 #imgBackTiles1 { 
     background-image: url(/assets/img/arcs/Electric\ Arc.png);
